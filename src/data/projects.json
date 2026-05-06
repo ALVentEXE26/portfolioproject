@@ -1,0 +1,36 @@
+{
+  "projects": [
+    {
+      "title": "Stopwatch",
+      "description": "A stopwatch application with lap recording capabilities. Features a vibrant red-pink gradient design with glassmorphism effects and smooth animations.",
+      "techStack": ["HTML", "CSS", "JavaScript"],
+      "completionDate": "2025-05-06",
+      "category": "Frontend",
+      "repoUrl": "https://github.com/ALVentEXE26/stopwatch"
+    },
+    {
+      "title": "BossBoard",
+      "description": "Task management and productivity board application for organizing work and personal projects.",
+      "techStack": ["HTML", "CSS", "JavaScript"],
+      "completionDate": "2025-05-06",
+      "category": "Frontend",
+      "repoUrl": "https://github.com/ALVentEXE26/BossBoard"
+    },
+    {
+      "title": "Waifu",
+      "description": "A website that displays images from the Waifu.im API. Users can search for images using tags.",
+      "techStack": ["HTML", "CSS", "JavaScript"],
+      "completionDate": "2025-05-06",
+      "category": "Frontend",
+      "repoUrl": "https://github.com/ALVentEXE26/waifu"
+    },
+    {
+      "title": "OpenWeather API",
+      "description": "A weather application providing current conditions, detailed forecasts, and air quality data for any city worldwide.",
+      "techStack": ["HTML", "CSS", "JavaScript"],
+      "completionDate": "2025-05-06",
+      "category": "Frontend",
+      "repoUrl": "https://github.com/ALVentEXE26/openweather_api"
+    }
+  ]
+}
