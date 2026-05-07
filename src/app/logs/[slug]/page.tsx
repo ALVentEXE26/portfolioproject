@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { getLogBySlug, getLogSlugs } from "@/lib/logs";
 import type { Metadata } from "next";
+import { PageAnimation } from "@/components/atoms/PageAnimation";
 
 interface LogPageProps {
   params: Promise<{ slug: string }>;
@@ -32,17 +33,25 @@ export default async function LogPage({ params }: LogPageProps) {
 
   return (
     <div className="mx-auto max-w-3xl px-4 py-12">
-      <p className="mb-4 text-sm text-[#3B82F6]">{log.metadata.date}</p>
-      <h1 className="mb-8 text-3xl font-bold text-[#E5E7EB]">
-        {log.metadata.title}
-      </h1>
-      <div className="prose prose-invert max-w-none">
-        {log.content.split("\n").map((line, i) => (
-          <p key={i} className="mb-4 text-[#9CA3AF]">
-            {line}
-          </p>
-        ))}
-      </div>
+      <PageAnimation delay={0}>
+        <p className="mb-4 text-sm text-[#3B82F6]">{log.metadata.date}</p>
+      </PageAnimation>
+
+      <PageAnimation delay={50}>
+        <h1 className="mb-8 text-3xl font-bold text-[#E5E7EB]">
+          {log.metadata.title}
+        </h1>
+      </PageAnimation>
+
+      <PageAnimation delay={100}>
+        <div className="prose prose-invert max-w-none">
+          {log.content.split("\n").map((line, i) => (
+            <p key={i} className="mb-4 text-[#9CA3AF]">
+              {line}
+            </p>
+          ))}
+        </div>
+      </PageAnimation>
     </div>
   );
 }
