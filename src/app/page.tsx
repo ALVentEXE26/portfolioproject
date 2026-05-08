@@ -25,10 +25,10 @@ export default function Home() {
               View Projects
             </Link>
             <Link
-              href="/logs"
+              href="/mih-journey"
               className="inline-flex items-center rounded-lg border border-[#3B82F6] px-4 py-2 text-sm font-medium text-[#3B82F6] transition-colors hover:bg-[#3B82F6]/10"
             >
-              Read Logs
+              My Journey
             </Link>
           </div>
         </section>
